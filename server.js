@@ -26,11 +26,11 @@ app.use((req, res, next) => {
 });
 
 // Comment out to remove from Maintenance mode
-app.use((req, res, next) => {
-    res.render('maintenance.hbs', {
-        pageTitle: 'Under Maintenance'
-    });
-});
+// app.use((req, res, next) => {
+//     res.render('maintenance.hbs', {
+//         pageTitle: 'Under Maintenance'
+//     });
+// });
 
 
 app.use(express.static(__dirname + '/public'));
